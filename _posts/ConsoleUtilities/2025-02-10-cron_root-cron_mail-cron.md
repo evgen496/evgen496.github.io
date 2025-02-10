@@ -1,4 +1,8 @@
-#auto #cron #autocron #reboot #root #linux
+---
+layout: post
+title:  Утилита Cron
+category: ConsoleUtilities
+---
 
 ***Есть много полезных консольных команд и приложений.Приведу здесь две пожалуй самые 
  необходимые консольные программы***:
