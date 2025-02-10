@@ -1,0 +1,9 @@
+*Желательно скачать и установить полную версию на CTAN*
+
+### Страница загрузки ISO:
+
+- https://ctan.altspu.ru/systems/texlive/Images/
+
+### Миннимальный установщик(netinstall):
+
+- https://tug.org/texlive/acquire-netinstall.html

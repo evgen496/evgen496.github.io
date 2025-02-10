@@ -1,0 +1,67 @@
+Его можно использовать для просмотра тегов ID3 в файле MP3. Кроме того, он может вносить простые изменения в метаданные.
+
+После установки мы можем запустить команду с флагом -h, чтобы просмотреть раздел справки:
+
+$ id3v2 -h
+
+Из выходных данных справки мы можем заметить, что эту команду можно использовать для просмотра и редактирования метаданных, таких как исполнитель, альбом, номер дорожки и т.д.
+
+Редактирование тегов
+
+Чтобы добавить или изменить определенное поле в метаданных, мы должны запустить команду с соответствующим флагом и новым значением. Например, мы должны использовать флаг -a , чтобы изменить имя исполнителя. За ним должно следовать имя / путь к файлу MP3. Давайте попробуем это:
+
+$ id3v2 -a "My Favorite Artist" my_music_file.mp3
+
+После того, как мы внесем правку, мы можем снова использовать команду id3v2 для проверки новых метаданных:
+
+$ id3v2 -l my_music_file.mp3
+id3v1 tag info for my_music_file.mp3:
+Title  :                                 Artist: My Favorite Artist
+Album  :                                 Year:     , Genre: Unknown (255)
+Comment:                                 Track: 0
+id3v2 tag info for my_music_file.mp3:
+TPE1 (Lead performer(s)/Soloist(s)): My Favorite Artist
+
+Мы видим, что указанное нами имя исполнителя было обновлено. Мы также можем использовать несколько флагов в команде для обновления нескольких полей одновременно:
+
+$ id3v2 -t "My Favorite Song" -A "My Favorite Album" -T 1 -y 2002 my_music_file.mp3
+
+$ id3v2 -l my_music_file.mp3
+id3v1 tag info for my_music_file.mp3:
+Title  : My Favorite Song                Artist: My Favorite Artist
+Album  : My Favorite Album               Year: 2002, Genre: Unknown (255)
+Comment:                                 Track: 1
+id3v2 tag info for my_music_file.mp3:
+TPE1 (Lead performer(s)/Soloist(s)): My Favorite Artist
+TIT2 (Title/songname/content description): My Favorite Song
+TALB (Album/Movie/Show title): My Favorite Album
+TRCK (Track number/Position in set): 1
+TYER (Year): 2002
+
+В первой команде выше мы использовали несколько флагов для обновления нескольких полей, т.е. -t для названия трека, -A для названия альбома, -T для номера трека и -y для года записи. Позже, выполнив команду с флагом списка (-l), мы увидим, что все сделанные нами обновления полей отражены в метаданных.
+
+Usage: id3v2 [OPTION]... [FILE]...
+
+Adds/Modifies/Removes/Views id3v2 tags, modifies/converts/lists id3v1 tags
+
+  -h,  --help               Display this help and exit
+  -f,  --list-frames        Display all possible frames for id3v2
+  -L,  --list-genres        Lists all id3v1 genres
+  -v,  --version            Display version information and exit
+  -l,  --list               Lists the tag(s) on the file(s)
+  -d,  --delete-v2          Deletes id3v2 tags
+  -s,  --delete-v1          Deletes id3v1 tags
+  -D,  --delete-all         Deletes both id3v1 and id3v2 tags
+  -C,  --convert            Converts id3v1 tag to id3v2
+  -1,  --id3v1-only         Writes only id3v1 tag
+  -2,  --id3v2-only         Writes only id3v2 tag
+  -r,  --remove-frame "FRAMEID"   Removes the specified id3v2 frame
+  -a,  --artist       "ARTIST"    Set the artist information
+  -A,  --album        "ALBUM"     Set the album title information
+  -t,  --song         "SONG"      Set the song title information
+  -c,  --comment      "DESCRIPTION":"COMMENT":"LANGUAGE"
+                            Set the comment information (both
+                            description and language optional)
+  -g,  --genre   num        Set the genre number
+  -y,  --year    num        Set the year
+  -T,  --track   num/num    Set the track number/(optional) total tracks
