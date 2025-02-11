@@ -17,6 +17,5 @@ crontab -e
 
 00 08 21 01 * echo 'Birthday Dasha 21.01.2017' > /home/jenit/'Рабочий стол'/date-Dasha.txt  
 
-[[Crontab]]
 
 
