@@ -1,4 +1,11 @@
+---
+layout: post
+title: Watermark LaTeX
+category: LaTeX
+---
+
 #watermark #водяной_знак
+
 Это можно элегантно обозначить, добавив ЧЕРНОВОЙ водяной знак на каждую страницу позади содержимого страницы. Для этого используйте пакет draftwatermark в преамбуле документа LaTeX:
 
 - \usepackage{draftwatermark}

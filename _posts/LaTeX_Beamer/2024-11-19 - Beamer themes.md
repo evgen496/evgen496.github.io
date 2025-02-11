@@ -1,4 +1,10 @@
-## Inbuilt themes in beamer
+---
+layout: post
+title:   Beamer. Themes
+category: LaTeX_Beamer
+---
+
+### Inbuilt themes in beamer
 
 A theme in beamer can be set using the command \`usetheme{themeName}`. Here is a 27 inbuilt themes in Beamer:
 
@@ -15,74 +21,74 @@ A theme in beamer can be set using the command \`usetheme{themeName}`. Here is a
 | [Copenhagen](https://latex-beamer.com/tutorials/beamer-themes/2/#Copenhagen)   | [Madrid](https://latex-beamer.com/tutorials/beamer-themes/4/#Madrid)           | [Warsaw](https://latex-beamer.com/tutorials/beamer-themes/5/#Warsaw)           |
 Следует отметить, что эти темы вносят изменения в глобальную структуру презентации.
 
-## Минимальный рабочий пример
+### Минимальный рабочий пример
 
 Следующий код используется для **создания презентации Beamer** для различных тем. Он включает в себя титульный лист, рамку плана, рамки списков и блоков. Вы можете изменить используемую тему и нажать кнопку **«Компилировать**», или просто ознакомиться с полученными презентациями ниже!
 
-% Inbuilt themes in beamer
-\documentclass{beamer}
+    % Inbuilt themes in beamer
+    \documentclass{beamer}
 
-% Theme choice:
-\usetheme{CambridgeUS}
+    % Theme choice:
+    \usetheme{CambridgeUS}
 
-% Title page details: 
-\title{Beamer Inbuilt Themes (CambridgeUS)} 
-\author{latex-beamer.com}
-\date{\today}
-\logo{\large \LaTeX{}}
-
-
-\begin{document}
-
-% Title page frame
-\begin{frame}
-    \titlepage 
-\end{frame}
-
-% Remove logo from the next slides
-\logo{}
+    % Title page details: 
+    \title{Beamer Inbuilt Themes (CambridgeUS)} 
+    \author{latex-beamer.com}
+    \date{\today}
+    \logo{\large \LaTeX{}}
 
 
-% Outline frame
-\begin{frame}{Outline}
-    \tableofcontents
-\end{frame}
+    \begin{document}
+
+    % Title page frame
+    \begin{frame}
+        \titlepage 
+    \end{frame}
+
+    % Remove logo from the next slides
+    \logo{}
 
 
-% Lists frame
-\section{Lists in Beamer}
-\begin{frame}{Lists in Beamer}
-
-This is an unordered list:
-\begin{itemize}
-    \item Item 1
-    \item Item 2
-    \item Item 3
-\end{itemize}
-
-and this is an ordered list:
-\begin{enumerate}
-    \item Item 1
-    \item Item 2
-    \item Item 3
-\end{enumerate}
-
-\end{frame}
+    % Outline frame
+    \begin{frame}{Outline}
+        \tableofcontents
+    \end{frame}
 
 
-% Blocks frame
-\section{Blocks in Beamer}
-\begin{frame}{Blocks in Beamer}
-    \begin{block}{Standard Block}
-        This is a standard block.
-    \end{block}
-    \begin{alertblock}{Alert Message}
-        This block presents alert message.
-    \end{alertblock}
-    \begin{exampleblock}{An example of typesetting tool}
-        Example: MS Word, \LaTeX{}
-    \end{exampleblock}
-\end{frame} 
+    % Lists frame
+    \section{Lists in Beamer}
+    \begin{frame}{Lists in Beamer}
 
-\end{document}
+    This is an unordered list:
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+
+    and this is an ordered list:
+    \begin{enumerate}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{enumerate}
+
+    \end{frame}
+
+
+    % Blocks frame
+    \section{Blocks in Beamer}
+    \begin{frame}{Blocks in Beamer}
+        \begin{block}{Standard Block}
+            This is a standard block.
+        \end{block}
+        \begin{alertblock}{Alert Message}
+            This block presents alert message.
+        \end{alertblock}
+        \begin{exampleblock}{An example of typesetting tool}
+            Example: MS Word, \LaTeX{}
+        \end{exampleblock}
+    \end{frame} 
+
+    \end{document}
 

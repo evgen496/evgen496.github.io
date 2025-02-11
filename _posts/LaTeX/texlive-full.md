@@ -1,1 +1,0 @@
-- pkg install -y texlive-texmf texlive-base/texlive-full

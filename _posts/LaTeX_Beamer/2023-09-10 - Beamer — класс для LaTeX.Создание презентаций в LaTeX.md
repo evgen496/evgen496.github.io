@@ -1,6 +1,10 @@
+---
+layout: post
+title:   Beamer. Для создания презентаций
+category: LaTeX_Beamer
+---
 
-
-![LaTeX_logo_bird](/Files/latex/LaTeX_logo_bird.png)
+![LaTeX_logo_bird](/image/latex/LaTeX_logo_bird.png)
 
 Существуе много программ для создания презентаций,в том числе и кросплатформенных.Самые известные из них это [LibreOffice Impress](https://www.libreoffice.org/download/download-libreoffice/),[Slidev](https://ru.sli.dev/guide/why.html).
 Но мне больше по душе LaTeX.
