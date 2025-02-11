@@ -1,134 +1,107 @@
-ImageMagick 
+---
+layout: post
+title:  ImageMagick
+category: ConsoleUtilities
+---
 
-mogrify и convert - утилиты входящие в состав imagemagick. Они используются для применения преобразований к файлам изображений. Они понимают одинаковые ключи. Команда convert требует указания выходного файла, а mogrify производит операции над самим файлом. 
+#### mogrify и convert - утилиты входящие в состав imagemagick.
 
-mogrify - произвести действия над самим изображением 
-convert - произвести действия над изображением и сохранить в другой файл 
-display - вывести изображение на экран 
-animate - вывести анимированное изображение на экран 
+Они используются для применения преобразований к файлам изображений. Они понимают одинаковые ключи. 
 
-Получение информации об изображении
+Команда convert требует указания выходного файла, а mogrify производит операции над самим файлом. 
 
-magick identify shadow.png
+- mogrify - произвести действия над самим изображением
 
-Получите подробную информацию об этом же изображении:
+- convert - произвести действия над изображением и сохранить в другой файл 
 
-magick identify -verbose shadow.png
+- display - вывести изображение на экран
 
-### Изменение размера изображения до 100×100 пикселей с сохранением пропорций
+- animate - вывести анимированное изображение на экран 
+
+#### Получение информации об изображении
+
+- magick identify shadow.png
+
+#### Получите подробную информацию об этом же изображении:
+
+- magick identify -verbose shadow.png
+
+#### Изменение размера изображения до 100×100 пикселей с сохранением пропорций
 
 Предположим, что если входное изображение имеет размер 800×600 пикселей, то выходное изображение с измененным размером будет иметь размер 100×75 пикселей.
 
-convert input.png -resize 100x100 output.png
+- convert input.png -resize 100x100 output.png
 
-### Изменение размера изображения до 100×100 пикселей без учета соотношения сторон
+#### Изменение размера изображения до 100×100 пикселей без учета соотношения сторон
 
 Размер изображения будет изменен ровно на 100×100 пикселей
 
-convert input.png -resize 100x100\! output.png
+- convert input.png -resize 100x100\! output.png
 
+### Основные команды с использование convert
 
-Основные команды с использование convert
+##### Ресайз всех изображений в директории
 
+- $ for a in `ls`; do echo $a && convert $a -resize <Width>x<Height> $a; done
 
+##### Создаем PDF из JPEG
 
-Ресайз всех изображений в директории
+- $ convert *.jpg -adjoin -monitor MyPDF.pdf
 
-$ for a in `ls`; do echo $a && convert $a -resize <Width>x<Height> $a; done
+##### Создаём превью для всех картинок в каталоге
 
+- $ for file in *.jpg;  do convert -scale 100 $file tn_$file ; done
 
+##### Добавить текст 'Flower' на картинку
 
-Создаем PDF из JPEG
+- $ convert flower.jpg -font courier -fill white -pointsize 20 -annotate +50+50 'Flower' flower_annotate1.jpg
 
-$ convert *.jpg -adjoin -monitor MyPDF.pdf
+##### Разместить текст 'Flower' внизу, по центру, добавив прозрачный фон
 
+- $ convert flower.jpg -fill white -box '#00770080' -gravity South -pointsize 20 -annotate +0+5 '   Flower   ' flower_annotate2.jpg
 
+##### Обрезать картинку
 
-Создаём превью для всех картинок в каталоге
+- $ convert flower.jpg -crop 128×128+50+50 flower_crop.jpg
 
-$ for file in *.jpg;  do convert -scale 100 $file tn_$file ; done
+#####Создать анимацию
 
+      $ convert -delay 100 -size 100×100 \
 
+      -page +0+0 flower_frame1.gif \
 
-Добавить текст 'Flower' на картинку
+      -page +0+0 flower_frame2.gif \
 
-$ convert flower.jpg -font courier -fill white -pointsize 20 \ 
+      -page +0+0 flower_frame3.gif \
 
-   -annotate +50+50 'Flower' flower_annotate1.jpg
+      -page +0+0 flower_frame4.gif \
 
+      -loop 0 flower_animation.gif
 
 
-Разместить текст 'Flower' внизу, по центру, добавив прозрачный фон
+##### Повернуть картинку по часовой стрелке на 90 градусов
 
-$ convert flower.jpg -fill white -box '#00770080' -gravity South \
+- $ mogrify DSC00606.JPG -rotate '90>' 
 
-   -pointsize 20 -annotate +0+5 '   Flower   ' flower_annotate2.jpg
+#####Сконвертировать ai(tiff, eps, pdf) в jpg
 
+- $ convert file.ai file.jpg
 
+##### Разбить pdf на jpg файлы, при этом увеличив разрешение (по сравнению с дефолтным)
 
-Обрезать картинку
+- $ convert -density 400 Next_700.pdf  -scale 2000x1000  file.jpg
 
-$ convert flower.jpg -crop 128×128+50+50 flower_crop.jpg
+##### Собрать из jpg-файлов gif анимацию
 
+- $ convert *.jpg images.gif
 
+##### Собрать из jpg-файлов gif-анимацию с задержкой между кадрами в 1.5 секунды
 
-Создать анимацию
+- $ convert -delay 150 *.jpg images.gif
 
-$ convert -delay 100 -size 100×100 \
+##### Просмотреть список шрифтов, с которыми может работать imagemagick
 
-   -page +0+0 flower_frame1.gif \
-
-   -page +0+0 flower_frame2.gif \
-
-   -page +0+0 flower_frame3.gif \
-
-   -page +0+0 flower_frame4.gif \
-
-   -loop 0 flower_animation.gif
-
-
-
-Повернуть картинку по часовой стрелке на 90 градусов
-
-$ mogrify DSC00606.JPG -rotate '90>' 
-
-
-
-Сконвертировать ai(tiff, eps, pdf) в jpg
-
-$ convert file.ai file.jpg
-
-
-
-Разбить pdf на jpg файлы, при этом увеличив разрешение (по сравнению
-
-с дефолтным)
-
-
-
-$ convert -density 400 Next_700.pdf  -scale 2000x1000  file.jpg
-
-
-
-Собрать из jpg-файлов gif анимацию
-
-$ convert *.jpg images.gif
-
-
-
-Собрать из jpg-файлов gif-анимацию с задержкой между кадрами в 1.5 секунды
-
-
-
-$ convert -delay 150 *.jpg images.gif
-
-
-
-Просмотреть список шрифтов, с которыми может работать imagemagick
-
-$ convert -list font
-
-
+- $ convert -list font
 
 Path: /usr/lib/ImageMagick-6.6.0/config/type-ghostscript.xml
 
@@ -144,7 +117,7 @@ Path: /usr/lib/ImageMagick-6.6.0/config/type-ghostscript.xml
 
     glyphs: /usr/share/fonts/type1/gsfonts/a010013l.pfb
 
-  Font: AvantGarde-BookOblique
+Font: AvantGarde-BookOblique
 
     family: AvantGarde
 
@@ -156,96 +129,48 @@ Path: /usr/lib/ImageMagick-6.6.0/config/type-ghostscript.xml
 
     glyphs: /usr/share/fonts/type1/gsfonts/a010033l.pfb
 
-...
+##### Сделать картинку с текстом 'Anthony'
 
-
-
-Сделать картинку с текстом 'Anthony'
-
-$ convert -background lightblue -fill blue \
+          $ convert -background lightblue -fill blue \
 
           -font URW-Palladio-Bold-Italic \
 
           -pointsize 72 label:Anthony label.gif
 
-
-
-Расширить картинку до 200х200
+##### Расширить картинку до 200х200
 
 Картинка при этом растягиваться не будет
 
+- $ mogrify -extent 200x200 label.gif
 
+##### Увеличить картинку в 10 раз
 
-$ mogrify -extent 200x200 label.gif
+- $ convert -sample 1000% in.jpg out.jpg
 
+##### Посмотреть список поддерживаемых форматов
 
+- $ mogrify -list Format
 
-Увеличить картинку в 10 раз
+##### Сделать картинки в папке серыми
 
-$ convert -sample 1000% in.jpg out.jpg
+- $ mogrify -type Grayscale *.jpg
 
+##### Собрать из картинок {1,2,3}.png один файл, добавляя к отступам по 4 пикселя и располагая их в две колонки
 
+- $ montage -geometry +4+4 -tile 2 1.png 2.png 3.png out.png
 
-Посмотреть список поддерживаемых форматов
+##### Изменить формат всех изображений с png на jpg
 
-$ mogrify -list Format
+- mogrify -format jpg *.png  
 
+##### Уменьшить изображение в несколько размеров за один вызов convert. При этом есть выйгрыш по скорости выполнения.
 
+      $ convert orig.png \
 
-Format  Module    Mode  Description
+      \( +clone -resize x128  -write  parrots_lrg.jpg +delete \) \
 
--------------------------------------------------------------
+      \( +clone -resize x96   -write  parrots_big.jpg +delete \) \
 
-   3FR  DNG       r--   Hasselblad CFV/H3D39II
+      \( +clone -resize x64   -write  parrots_med.jpg +delete \) \
 
-     A* RAW       rw+   Raw alpha samples
-
-    AI  PDF       rw-   Adobe Illustrator CS2
-
-   ART* ART       rw-   PFS: 1st Publisher Clip Art
-
-   ARW  DNG       r--   Sony Alpha Raw Image Format
-
-...
-
-
-
-Сделать картинки в папке серыми
-
-$ mogrify -type Grayscale *.jpg
-
-
-
-Собрать из картинок {1,2,3}.png один файл,
-
-добавляя к отступам по 4 пикселя и располагая их
-
-в две колонки
-
-
-
-$ montage -geometry +4+4 -tile 2 1.png 2.png 3.png out.png
-
-
-
-Изменить формат всех изображений с png на jpg
-
-mogrify -format jpg *.png  
-
-
-
-Уменьшить изображение в несколько размеров за один вызов convert.
-
-При этом есть выйгрыш по скорости выполнения.
-
-
-
-$ convert orig.png \
-
-  \( +clone -resize x128  -write  parrots_lrg.jpg +delete \) \
-
-  \( +clone -resize x96   -write  parrots_big.jpg +delete \) \
-
-  \( +clone -resize x64   -write  parrots_med.jpg +delete \) \
-
-  -resize x32           parrots_sml.jpg
+      -resize x32           parrots_sml.jpg
