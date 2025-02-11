@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Команда ren (Windows)
+category: Program
+---
+
 #rename
 
 ### Замена расширения .txt на .md всех файлов в папках Винды.

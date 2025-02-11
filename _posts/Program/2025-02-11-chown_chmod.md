@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Правами доступа
+title: Права доступа для файлов и директорий
 category: Program
 ---
 
