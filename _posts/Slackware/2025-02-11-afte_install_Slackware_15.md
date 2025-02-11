@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slackware
+title: Slackware.Добавить нового пользователя
 category: Slackware
 ---
 
