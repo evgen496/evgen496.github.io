@@ -1,7 +1,7 @@
 ---
 layout: post
 title:   Beamer. Для создания презентаций
-category: LaTeXBeamer
+category: LaTeX_Beamer
 ---
 
 ![LaTeX_logo_bird](/image/latex/LaTeX_logo_bird.png)

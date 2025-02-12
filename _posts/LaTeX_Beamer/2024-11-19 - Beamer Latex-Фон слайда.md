@@ -1,7 +1,7 @@
 ---
 layout: post
 title:   Beamer. Изменить фон слайда
-category: LaTeXBeamer
+category: LaTeX_Beamer
 ---
 
 #beamer #back #slid #слайд
