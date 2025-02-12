@@ -1,7 +1,7 @@
 ---
 layout: post
 title:   Beamer. Themes
-category: LaTeX_Beamer
+category: LaTeXBeamer
 ---
 
 ### Inbuilt themes in beamer
