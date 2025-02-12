@@ -6,7 +6,7 @@ category: Linux
 
 #btrfs
 
-## Особенности режима BTRFS:
+#### Особенности режима BTRFS:
 
 - снимки создаются с использованием встроенных средств файловой системы BTRFS;
 
@@ -24,7 +24,7 @@ category: Linux
 
 - снимки можно восстановить без немедленной перезагрузки запущенной системы.
 
-## На вкладке «Тип» выбрать тип снимков:
+#### На вкладке «Тип» выбрать тип снимков:
 
 ![](/image/Timeshift/1.Timeshift-btrfs-01.png)
 
@@ -45,7 +45,7 @@ category: Linux
 ![](/image/Timeshift/4.Timeshift-btrfs-04.png)
 
 
-## Восстановление системы
+#### Восстановление системы
 
 Снимки можно восстановить либо из работающей системы (оперативное восстановление), либо из другой системы, на которой установлен Timeshift (автономное восстановление).
 
@@ -57,19 +57,19 @@ category: Linux
 
 Для завершения процесса восстановления требуется перезагрузка системы.
 
-# Работа с Timeshift в командной строке
+### Работа с Timeshift в командной строке
 
-## Вывод справки о команде:
+#### Вывод справки о команде:
 
 - $ timeshift
 Если параметры не указаны, например при создании снимка, значения по умолчанию будут загружены из конфигурации приложения.
 
-## Просмотр списка снимков:
+#### Просмотр списка снимков:
 
 ***Пример:***
 
 - $ timeshift --list
-
+```
   /dev/sda2 is mounted at: /run/timeshift/backup, options: rw,relatime,ssd,space_cache=v2,subvolid=5,subvol=/
 
   Device : /dev/sda2
@@ -92,8 +92,8 @@ Num     Name                 Tags  Description
 2    >  2021-12-29_08-48-49  O                                             
 3    >  2021-12-29_15-40-02  O D                                           
 4    >  2021-12-29_15-41-48  O     Before restoring '2021-12-28 17:01:26'
-
-## Создание снимка:
+```
+#### Создание снимка:
 
 - $ timeshift --create
 
@@ -101,42 +101,42 @@ Num     Name                 Tags  Description
 
 - $ timeshift --create --comments "after update" --tags D
 
-  Using system disk as snapshot device for creating snapshots in BTRFS mode
+      Using system disk as snapshot device for creating snapshots in BTRFS mode
 
-  /dev/sda2 is mounted at: /run/timeshift/backup, options: rw,relatime,ssd,space_cache=v2,subvolid=5,subvol=/
+      /dev/sda2 is mounted at: /run/timeshift/backup, options: rw,relatime,ssd,space_cache=v2,subvolid=5,subvol=/
 
-  Creating new backup...(BTRFS)
+      Creating new backup...(BTRFS)
 
-  Saving to device: /dev/sda2, mounted at path: /run/timeshift/backup
+      Saving to device: /dev/sda2, mounted at path: /run/timeshift/backup
 
-  Created directory: /run/timeshift/backup/timeshift-btrfs/snapshots/
-  2021-12-29_16-06-38
+      Created directory: /run/timeshift/backup/timeshift-btrfs/snapshots/
+      2021-12-29_16-06-38
 
-  Created subvolume snapshot: /run/timeshift/backup/timeshift-btrfs/snapshots/2021-12-29_16-06-38/@
+      Created subvolume snapshot: /run/timeshift/backup/timeshift-btrfs/snapshots/2021-12-29_16-06-38/@
 
-  Created control file: /run/timeshift/backup/timeshift-btrfs/snapshots/2021-12-29_16-06-38/info.json
+      Created control file: /run/timeshift/backup/timeshift-btrfs/snapshots/2021-12-29_16-06-38/info.json
 
-  BTRFS Snapshot saved successfully (0s)
+      BTRFS Snapshot saved successfully (0s)
 
-  Tagged snapshot '2021-12-29_16-06-38': ondemand
+      Tagged snapshot '2021-12-29_16-06-38': ondemand
 
-## Создание снимка, если он запланирован (есть в расписании):
+### Создание снимка, если он запланирован (есть в расписании):
 
 - $ timeshift --check
 
-## Восстановить снимок (параметры будут запрошены в интерактивном режиме):
+#### Восстановить снимок (параметры будут запрошены в интерактивном режиме):
 
 - $ timeshift --restore
 
-## Восстановить снимок:
+#### Восстановить снимок:
 
 - $ timeshift --restore --snapshot '2021-12-28_17-01-26'
 
-## Восстановить определенный снимок в необходимый раздел (для rsync):
+#### Восстановить определенный снимок в необходимый раздел (для rsync):
 
 - $ timeshift --restore --snapshot 1 --target /dev/sda2
 
-## Удалить снимок:
+#### Удалить снимок:
 
 - $ timeshift --delete --snapshot '2021-12-28_17-01-26'
 

@@ -3,6 +3,7 @@ layout: post
 title:  Запись звука с микрофона в терминале
 category: Linux
 ---
+#arecord #sox
 
 #### Способ 1
 

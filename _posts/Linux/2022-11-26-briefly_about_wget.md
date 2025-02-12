@@ -4,8 +4,6 @@ title: briefly about wget
 category: Linux
 ---
 
-
-
 **Команда wget linux имеет очень простой синтаксис**:
 
 >$ wget опции аддресс_ссылки

@@ -6,4 +6,4 @@ category: Linux
 
 Для отображения данных достаточно активировать в консоли:
 
->**hostnamectl**
+- hostnamectl

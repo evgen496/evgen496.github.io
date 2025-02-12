@@ -40,18 +40,29 @@ $ git add .
 $ git commit -m " '1 2 3' или любой другой commit"
 
 *********************************************************
+#### Pull it on github
+
+С git-а:
+
+- $ git clone https://github.com/username/username.github.io
 
 #### Push it on github
 
 ***Отправляем изменения на GIT:***
 
-~$ git add --all
+- $ git add .
 
-~$ git commit -m '1 2 3'
+- $ git status
 
-~$ git push -u origin master
+- $ git commit -m "new"
 
- git remote add origin:
+- $ git push
+
+- Username for 'https://github.com': Username
+
+- Password for 'https://***.com': ***(token)
+
+[Как получить токен(пароль)](https://vk.com/wall-215896332_192)
 
 
 
@@ -65,21 +76,9 @@ $ git commit -m " '1 2 3' или любой другой commit"
 
 *Enter the project folder and add an index.html file:*
 
-~ $cd username.github.io
+~ $ cd username.github.io
 
-~ $echo "Hello World" > index.html
+~ $ echo "Hello World" > index.html
 
 ********************************************
-
-***Отправляем изменения на GIT:***
-
-• Push it
-
-*Add, commit, and push your changes:*
-
-~ $git add --all
-
-~ $git commit -m "Initial commit"
-
-~ $git push -u origin main
 
