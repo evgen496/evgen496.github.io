@@ -1,5 +1,13 @@
-crontab -e
+---
+layout: post
+title:  Пример моего crontab
+category: Program
+---
+ 
+- crontab -e  #создать задание
 
+- crobtab -l  #список заданий
+```
 #minute (0-59),
 #|	hour (0-23),
 #|	|	day of the month (1-31),
@@ -16,6 +24,6 @@ crontab -e
 00 08 16 06 * echo 'Birthday Ura 16.06.1993' > /home/jenit/'Рабочий стол'/date-Ura.txt  
 
 00 08 21 01 * echo 'Birthday Dasha 21.01.2017' > /home/jenit/'Рабочий стол'/date-Dasha.txt  
-
+```
 
 
