@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Duc — это консольная утилита
+title:  Duc — это консольная утилита об использовании дисков
 category: ConsoleUtilities
 ---
 

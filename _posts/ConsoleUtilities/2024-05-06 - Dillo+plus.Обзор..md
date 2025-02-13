@@ -1,3 +1,9 @@
+---
+layout: post
+title: Dillo +
+category: ConsoleUtilities
+---
+
 https://github.com/crossbowerbt/dillo-plus
 
 ## Поиск
