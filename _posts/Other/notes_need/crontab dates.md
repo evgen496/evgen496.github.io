@@ -17,3 +17,4 @@
 
 [[Crontab]]
 
+1 * * * * echo 'date' > /home/jenit/Desktop/date.txt
