@@ -3,7 +3,8 @@ layout: post
 title: Лесли Лэмпорт
 category: Interesting
 ---
-![](/image/my_image/Leslie_lamport.jpg)
+
+![](/image/my_image/Leslie_Lamport.jpg)
 
 #### **Биография**
 
