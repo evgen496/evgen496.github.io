@@ -1,0 +1,60 @@
+---
+layout: default
+title: Archive
+---
+
+<head>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(99860294, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/99860294" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+ 
+</head>
+
+<body>
+
+
+
+</body>
+
+
+  <h2>Archive</h2>
+
+  <section class="archive_list">
+    {% for category in site.categories %}
+
+    <div class="category-name">
+      <h2>{{ category | first }}</h2>
+    </div>
+    {% for post in category.last %}
+
+    <div class="post_title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
+      <span class="date">{{ post.date | date: "%-d %B - %A, %Y " }}</span>
+    </div>
+
+    {% endfor %}
+
+    {% endfor %}
+
+  </section>
+
+  <!--<footer class="article-footer" mar> -->
+    {% include author.html %}
+
+
+
+
