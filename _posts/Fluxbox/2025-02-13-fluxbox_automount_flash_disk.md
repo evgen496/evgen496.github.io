@@ -1,4 +1,10 @@
-### В моем случае(узнать и смонтировать):
+---
+layout: post
+title:  Fluxbox - монтирование дисков
+category: Fluxbox
+---
+
+#### В моем случае(узнать и смонтировать):
 
 - bash-5.1$ lsblk
 
@@ -18,7 +24,7 @@
 
 - mount -t auto /dev/sdc1 /home/jenit/usb
 
-### Размонтировать:
+#### Размонтировать:
 
 - bash-5.1# umount /dev/sdc1
 

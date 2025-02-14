@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Fluxbox - настройка терминала xterm
+category: Fluxbox
+---
+```
 ! XTerm
 !==============================================================================
 !Кириллица
@@ -49,3 +55,4 @@ xterm*color14:     #177f75
 ! Белый
 xterm*color7:      #cdcaa9
 xterm*color15:     #ffffff
+```

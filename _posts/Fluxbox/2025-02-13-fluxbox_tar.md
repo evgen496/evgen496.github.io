@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Fluxbox - TAR-архив
+category: Fluxbox
+---
+
 ### Архив TAR
 
 - архивирование файла или директории без сжатия:

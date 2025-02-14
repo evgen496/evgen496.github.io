@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Fluxbox - ZIP-архив
+category: Fluxbox
+---
+
 #### архивирование файла:
 
 - zip архив.zip файл
