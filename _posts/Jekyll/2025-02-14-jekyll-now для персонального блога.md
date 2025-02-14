@@ -1,3 +1,9 @@
+---
+layout: post
+title: Jekyll для "чайников"
+category: Jekyll
+---
+
 Небольшой гайд для чайников про запуск своего блога на [GitHub Pages](https://pages.github.com/), несколько полезных твиков для добавления в блог архива, тегов и новых иконок.
 
 # jekyll-now для персонального блога [Permalink](https://annjulyleon.github.io/guides/jekyll-now-as-personal-blog/#jekyll-now-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B1%D0%BB%D0%BE%D0%B3%D0%B0 "Permalink")

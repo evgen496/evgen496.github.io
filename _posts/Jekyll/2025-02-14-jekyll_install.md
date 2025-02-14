@@ -1,3 +1,9 @@
+---
+layout: post
+title: Создание, запуск блога/сайта пошагово на локальном компьютере
+category: Jekyll
+---
+
 #### Ruby install if notinstall
 
 - gem install bundler
