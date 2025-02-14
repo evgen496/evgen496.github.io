@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Fluxbox - управление питанием монитора
+category: Fluxbox
+---
+
 DPMS (Display Power Manager Signaling) — сигналы управления энергопотреблением дисплеев, технология, позволяющая управлять питанием монитора.
 
 ***Включить сие можно в xorg.conf(xorg.conf.d/) в секции Monitor (по-умолчанию включено)***
