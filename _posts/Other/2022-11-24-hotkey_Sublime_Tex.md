@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  hotkey Sublime Tex
-category: Linux
+category: Other
 ---
 
  Очень полезно потратить немного времени на изучение быстрых клавиш **Sublime Text**. Комбинации, 

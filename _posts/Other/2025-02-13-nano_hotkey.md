@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  nano hotkey
-category: Linux
+category: Other
 ---
 
->Опция          Длинная опция           Значение
  
  - -A             --smarthome             Включить умную клавишу home
  
