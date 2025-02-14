@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Fluxbox - Questions
+category: Fluxbox
 ---
 
 #### Что такое slit??
