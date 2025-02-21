@@ -1,0 +1,345 @@
+{
+  "main": {
+    "id": "110f108917055bb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ba5d1b342726d903",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cdd72f708feb5712",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7201b1c76fa74f74",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfa653bfe33e3fff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48f49305ddad6a2e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "54687b1ec117cde2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#minute",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "25628e505240c563",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 347.5
+  },
+  "right": {
+    "id": "46d166c857f705b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "64964acee5c07273",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "179359690e025954",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CTAN.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для CTAN"
+            }
+          },
+          {
+            "id": "d76417e6f29b5bd3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CTAN.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из CTAN"
+            }
+          },
+          {
+            "id": "43177b2660276502",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "717fb6ee55f88a02",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Интересное/Экономика_должна_быть_экономной.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура Экономика_должна_быть_экономной"
+            }
+          },
+          {
+            "id": "6daa2c31ee49f381",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "8c5a04867d685c8c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "4fa05f779e2a5430",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "7f8687ddba249e65",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "8eed6c2b553d80c2",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "3d7a4195a6227724",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "69929c8becd1402c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2025-02-06.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-02-06"
+            }
+          },
+          {
+            "id": "89c817835cb77323",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "663662fa7220a14a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "3dc7c3155c8b9a88",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Очередь заметок на повторение"
+            }
+          },
+          {
+            "id": "aa2e2836c4e53769",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Очередь заметок на повторение"
+            }
+          }
+        ],
+        "currentTab": 14
+      }
+    ],
+    "direction": "horizontal",
+    "width": 362.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "audio-recorder:Начать/остановить запись": false,
+      "obsidian-spaced-repetition:Изучать карточки": false
+    }
+  },
+  "active": "aa2e2836c4e53769",
+  "lastOpenFiles": [
+    "Markdown/2023-07-24-Как добавить рамку для изображения.md",
+    "Markdown/2023-12-25-HTML for markdown.md",
+    "Markdown/2023-07-24-markdown all.md",
+    "Markdown/2024-03-02-размер_ изображений _markdown.md",
+    "Markdown/pandoc.md",
+    "English/2.ДЛЯ ЕЖЕДНЕВНОГО ОБЩЕНИЯ.md",
+    "English/1.67-best+100.md",
+    "English/eng/100_phrasal_verbs.md",
+    "English/eng/170_phrasal_verbs.md",
+    "English/00.Фразовый глагол BE.md",
+    "English/000.одежда.md",
+    "English/!!! Подборка из самых употребляемых фраз на английском.md",
+    "English/!!! Фразовые глаголы-100.md",
+    "English/!!! 170_ФРАЗОВЫХ_ГЛАГОЛОВ.md",
+    "English/!!! 40 полезных выражений.md",
+    "English/!!! Без названия.md",
+    "English/!!! 170_ФРАЗОВЫХ_ГЛАГОЛОВ_2.md",
+    "English/!!! 170_ФРАЗОВЫХ_ГЛАГОЛОВ (2).md",
+    "English/eng/50_irregular.md",
+    "Интересное/Апостроф.md",
+    "English/eng/Weekend.md",
+    "English/eng/weekday.md",
+    "English/eng/transcription.md",
+    "English/eng/to_have.md",
+    "English/eng/to_be.md",
+    "English/eng/telephone.md",
+    "English/eng",
+    "English",
+    "Личнные/Мои настройки/beamer_block.png",
+    "Markdown/Markdown Video Preview.html",
+    "Markdown",
+    "HTML/html_test",
+    "HTML",
+    "Files/vx_images/435290218248595.jpg",
+    "Files/vx_images/yandex.webp",
+    "Files/vx_images/67251700245925.png",
+    "Files/vx_images/63490120235562.png",
+    "Files/vx_images/589690514227346.png",
+    "Files/vx_images/583080318236462.jpg",
+    "Files/vx_images/573291218257090.jpg",
+    "Files/vx_images/571880414239479.png",
+    "Files/vx_images/567275417258273.jpg",
+    "Files/vx_images",
+    "Files/my_image",
+    "Files/latex",
+    "Files/figma",
+    "Без названия.canvas"
+  ]
+}
