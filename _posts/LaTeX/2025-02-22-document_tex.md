@@ -1,3 +1,13 @@
+---
+layout: post
+title:  fonts pt-astra-serif Slackware
+category: LaTeX
+---
+
+![astra_serif](/img/latex/astra_serif_includ.png)
+
+![fonts_LaTeX](/img/latex/fonts_LaTeX_text.png)
+
 ```
 \documentclass[russian,12pt,a4paper]{article}
 \usepackage{fontspec}
