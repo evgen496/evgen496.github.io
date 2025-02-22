@@ -1,6 +1,6 @@
 {
   "accentColor": "#f2f2f2",
-  "nativeMenus": false,
+  "nativeMenus": true,
   "cssTheme": "Wasp",
   "theme": "obsidian",
   "baseFontSize": 16,

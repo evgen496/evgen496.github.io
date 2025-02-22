@@ -11,12 +11,24 @@
             "id": "cdd72f708feb5712",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.7"
+                "file": "_posts/Interesting/Грибоедова_Горе_от_ума.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
+              "icon": "lucide-file",
+              "title": "Грибоедова_Горе_от_ума"
             }
           }
         ]
@@ -258,12 +270,32 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "aa2e2836c4e53769",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "3da97e2ed2aabd34",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Очередь заметок на повторение"
             }
           },
           {
-            "id": "aa2e2836c4e53769",
+            "id": "fb7790d7494324bd",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -273,7 +305,7 @@
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 16
       }
     ],
     "direction": "horizontal",
@@ -292,8 +324,11 @@
       "obsidian-spaced-repetition:Изучать карточки": false
     }
   },
-  "active": "aa2e2836c4e53769",
+  "active": "fb7790d7494324bd",
   "lastOpenFiles": [
+    "_posts/Interesting/2025-02-13-17_фраз.md",
+    "_posts/Interesting/2023-07-28-Zettelkasten-Цеттелькастен.md",
+    "_posts/Interesting/Грибоедова_Горе_от_ума.md",
     "Markdown/2023-07-24-Как добавить рамку для изображения.md",
     "Markdown/2023-12-25-HTML for markdown.md",
     "Markdown/2023-07-24-markdown all.md",
@@ -317,9 +352,6 @@
     "English/eng/Weekend.md",
     "English/eng/weekday.md",
     "English/eng/transcription.md",
-    "English/eng/to_have.md",
-    "English/eng/to_be.md",
-    "English/eng/telephone.md",
     "English/eng",
     "English",
     "Личнные/Мои настройки/beamer_block.png",
