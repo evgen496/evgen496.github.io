@@ -1,3 +1,9 @@
+---
+layout: post
+title:  ImageMagick.PNG,JPG или любой другой формат изображения в PDF
+category: Other
+---
+
 ## Установите imagemagick
 
 Использование терминала, где находится PDF-файл:
