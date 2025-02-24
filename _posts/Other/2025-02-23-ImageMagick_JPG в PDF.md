@@ -1,3 +1,9 @@
+---
+layout: post
+title:  ImageMagick.Convert to PDF
+category: Other
+---
+
 #convert #jpginpdf
 
 ---
