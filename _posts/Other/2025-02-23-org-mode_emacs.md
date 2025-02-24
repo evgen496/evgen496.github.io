@@ -1,3 +1,9 @@
+---
+layout: post
+title:  Emacs.Org-mode.
+category: Other
+---
+
 ### В emacs есть замечательный режим org-mode.
 
 #### Он исползуется для организации заметок,и не только.
